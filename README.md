@@ -10,8 +10,8 @@
     border-collapse: collapse; 
     width: 80%; 
     border: 1.5px solid #21262d; 
-    background-color:#020035;">
-    margin-bottom: 15px
+    background-color:#020035;
+    margin-bottom: 15px;
   a {
     color: #00f0ff;          
     text-decoration: none;
