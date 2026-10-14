@@ -1,39 +1,3 @@
-<style>
-  body {
-    background-color: #020035;
-    color: #e2e8f0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    line-height: 1.6;
-    padding: 20px;
-  }
-  
-  table {
-    border-collapse: collapse;
-    width: 80%;
-    border: 1.5px solid #21262d;
-    background-color: #020035;
-    margin-bottom: 15px;
-  }
-
-  th, td {
-    border: 1.5px solid #21262d;
-    padding: 12px;
-  }
-
-  a {
-    color: #00f0ff;
-    text-decoration: none;
-    font-weight: bold;
-  }
-
-  a:hover {
-    color: #ffffff;
-    text-decoration: underline;
-  }
-</style>
-
-
-
 # Paediatric Femur Plate Simulation
 
 The objective of this CAD project was to design a fracture plate tailored to the anatomy of a paediatric femur, which differs significantly from a mature femur. Design choices were made with both physiology and surgical usability in mind.
