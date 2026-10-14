@@ -1,13 +1,51 @@
+<style>
+  body {
+    background-color: #020035;
+    color: #e2e8f0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; 
+    line-height: 1.5;
+    padding: 20px;
+  }
+  table {
+    border-collapse: collapse; 
+    width: 80%; 
+    border: 1.5px solid #21262d; 
+    background-color:#020035;">
+    margin-bottom: 15px
+  a {
+    color: #00f0ff;          
+    text-decoration: none;
+    font-weight: bold;
+  }
+   a:hover {
+    color: #ffffff;          
+    text-decoration: underline; 
+  }
+   th, td {
+    border: 1.5px solid #21262d;
+  }
+</style>
+
 # Paediatric Femur Plate Simulation
 
 The objective of this CAD project was to design a fracture plate tailored to the anatomy of a paediatric femur, which differs significantly from a mature femur. Design choices were made with both physiology and surgical usability in mind.
 
 Designed for a 35 cm femur, this plate corresponds to the typical anatomy of an 8-to 9-year-old child [1]. A child in this age range typically weighs between 25 to 29 kilograms [2] [3]. The implant was designed for the walking forces of a 29 kg child, calculated by downscaling multi-axis adult gait telemetry data, with a safety factor of 2.0 [4].
 
-The implant architecture is explicitly engineered to navigate the clinical boundaries of pediatric anatomy, maximizing mechanical stabilisation while preserving natural bone healing mechanisms.
+The implant architecture is explicitly engineered to navigate the clinical boundaries of paediatric anatomy, maximising mechanical stabilisation while preserving natural bone healing mechanisms.
 
-| Implant Feature & Engineering Specification | Visual Asset / CAD Reference |
-| :--- | :--- |
-| **Distal Anchor Configuration**<br>• **Anatomical Constraint:** Avoids active growth plates (physis) by positioning the plate head proximally.<br>• **Maximised Anchor Space:** Anchors three locking screws in a tight triangular layout within a narrow safe zone.<br>• **Torsional Resistance:** Triangular orientation actively locks the bone segment against twisting moments.<br>• **Fixation Stability:** Evenly distributes a **29 kg scaled child force** to prevent catastrophic localized failures in soft pediatric bone tissue. | ![Distal Anchor CAD Setup](PASTE_YOUR_DISTAL_ANCHOR_IMAGE_LINK_HERE) |
-| **Locking Compression Plate (LCP) Combi Holes**<br>• **Hybrid Geometry:** Integrates a threaded section for fixed-angle locking screws with a dynamic compression cortical screw mechanism.<br>• **Mechanical Versatility:** Allows surgeons to dynamically select between rigid bridging fixation and axial compression based on intraoperative variables.<br>• **Biological Preservation:** Locks screws directly to the plate to completely eliminate mechanical compression against the periosteal surface, preserving regional blood supply to accelerate osteogenesis. | ![LCP Combi Holes Interface](PASTE_YOUR_COMBI_HOLES_IMAGE_LINK_HERE) |
-| **Underside Scalloping Profile**<br>• **Interface Optimization:** Recesses the underside profile of the plate shaft to dramatically minimize metal-to-bone contact surface area.<br>• **Preserved Blood Flow:** Protects the outer periosteal blood supply, mitigating localized cortical bone tissue death.<br>• **Optimised Stress Distribution:** Smooths the sudden stiffness transition zones along the shaft, reducing localized stress spikes around screw holes during dynamic movement.<br>• **Reduced Rigid Fixation:** Lowers overall structural weight and implant stiffness, allowing the healing bone matrix to safely share physiological loads and preventing stress shielding. | ![Underside Scalloping Simulation](PASTE_YOUR_SCALLOPING_IMAGE_LINK_HERE) |
+<table>
+  <tr>
+    <th>Implant Feature</th>
+    <th>CAD Reference</th>
+  </tr>
+    <td>
+      <h3> Distal Anchor Configuration </h3>
+      <ul>
+        <li> <strong>Maximised Anchor Space:</strong> Fits the most screws securely within the small area above the growth plate. </li>
+        <li> <strong>Torsional Resistance:</strong> The triangular layout stops the bone from twisting. </li>
+        <li> <strong>Fixation Stability:</strong> Spreads the 29 kg scaled child forces evenly to avoid damaging soft paediatric bone. </li>
+      </ul>
+    </td> 
+  <tr>
+</table>
