@@ -1,7 +1,10 @@
 # Paediatric Femur Plate Simulation
-An anatomically conscious, highly adaptable, patient-specific femoral plate, engineered to preserve bone microvascular blood supply.
 
-The implant architecture is explicitly engineered to navigate the clinical boundaries of pediatric anatomy, maximizing mechanical stabilization while preserving natural bone healing mechanisms.
+The objective of this CAD project was to design a fracture plate tailored to the anatomy of a paediatric femur, which differs significantly from a mature femur. Design choices were made with both physiology and surgical usability in mind.
+
+Designed for a 35 cm femur, this plate corresponds to the typical anatomy of an 8-to 9-year-old child [1]. A child in this age range typically weighs between 25 to 29 kilograms [2] [3]. The implant was designed for the walking forces of a 29 kg child, calculated by downscaling multi-axis adult gait telemetry data, with a safety factor of 2.0 [4].
+
+The implant architecture is explicitly engineered to navigate the clinical boundaries of pediatric anatomy, maximizing mechanical stabilisation while preserving natural bone healing mechanisms.
 
 | Implant Feature & Engineering Specification | Visual Asset / CAD Reference |
 | :--- | :--- |
