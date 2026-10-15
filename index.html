@@ -1,65 +1,90 @@
 <link rel="stylesheet" href="style.css">
-# Paediatric Femur Plate Simulation
 
+<h1>Paediatric Femur Fracture Plate Design</h1>
+
+<p>
 The objective of this CAD project was to design a fracture plate tailored to the anatomy of a paediatric femur, which differs significantly from a mature femur. Design choices were made with both physiology and surgical usability in mind.
+</p>
 
+<p>
 Designed for a 35 cm femur, this plate corresponds to the typical anatomy of an 8-to 9-year-old child [1]. A child in this age range typically weighs between 25 to 29 kilograms [2] [3]. The implant was designed for the walking forces of a 29 kg child, calculated by downscaling multi-axis adult gait telemetry data, with a safety factor of 2.0 [4].
+</p>
 
+<p>
 The implant architecture is explicitly engineered to navigate the clinical boundaries of paediatric anatomy, maximising mechanical stabilisation while preserving natural bone healing mechanisms.
+</p>
 
 <table>
   <tr>
-    <th>Implant Feature</th>
-    <th>CAD Reference</th>
+    <th style="text-align: left; width: 65%;">Implant Feature & Rationale Specification</th>
+    <th style="text-align: center; width: 35%;">CAD Reference</th>
   </tr>
-    <td>
-      <th> Distal Anchor Configuration </th>
-      <ul>
-        <li> <strong>Maximised Anchor Space:</strong> Fits the most screws securely within the small area above the growth plate. </li>
-        <li> <strong>Torsional Resistance:</strong> The triangular layout stops the bone from twisting. </li>
-        <li> <strong>Fixation Stability:</strong> Spreads the 29 kg scaled child forces evenly to avoid damaging soft paediatric bone. </li>
-      </ul>
-    </td> 
-    <td>
-      <img src="images/distal-anchor.png" width="280
-    </td>
-  </tr>
+
   <tr>
-    <td>
-      <th> Locking Compression Plate Combi Holes </th>
+    <td style="vertical-align: top;">
+      <h3>Distal Anchor Configuration</h3>
+      <p class="clinical-context">
+        Children have active growth plates (physis) at their joints. The distal physis is located where the head of the adult fracture plate would normally sit. For a child, the head must be positioned proximal to the physis so that the screws do not damage it.
+      </p>
       <ul>
-        <li> <strong>Mechanical Versatility: </strong> Allows the choice between rigid bridging fixation and axial compression depending on intraoperative needs. </li>
-        <li> <strong>Biological Preservation:</strong>  Locks the screws directly to the plate to avoid compression against the periosteal surface, preserving blood supply to accelerate bone healing. </li>
+        <li><strong>Maximised Anchor Space:</strong> Fits the most screws securely within the small area above the growth plate.</li>
+        <li><strong>Torsional Resistance:</strong> The triangular layout stops the bone from twisting.</li>
+        <li><strong>Fixation Stability:</strong> Spreads the 29 kg scaled child forces evenly to avoid damaging soft paediatric bone.</li>
       </ul>
     </td> 
-    <td>
-      <img src="images/lcp-combi-hole.png" width="280
+    <td style="text-align: center; vertical-align: middle;">
+      <img src="images/distal-anchor.png" width="280" alt="Distal Anchor CAD">
     </td>
   </tr>
-   <tr>
-    <td>
-      <th> Scalloped Underside </th>
-      <ul>
-        <li> <strong>Preserved Blood Flow:</strong>  Minimises contact with the periosteum to protect the bone's outer blood supply. This prevents localized bone tissue death and helps speed up biological healing. </li>
-        <li> <strong>Optimised Stress Distribution:</strong> Smooths out the stiffness transition and increases flexibility along the plate shaft. This reduces high stress concentrations around the screw holes during movement. </li>
-         <li> <strong>Reduced Rigid Fixation: </strong>  Lowers the plate's structural weight and stiffness. This lets the healing bone share some of the normal walking loads, which helps prevent long-term bone thinning from stress shielding. </li>
-      </ul>
-    </td> 
-    <td>
-      <img src="images/scalloping.png" width="280
-    </td>
-  </tr>
+
   <tr>
-    <td>
-      <th> Material Choice </th>
+    <td style="vertical-align: top;">
+      <h3>Locking Compression Plate Combi Holes</h3>
+      <p class="clinical-context">
+        To complement this configuration, the plate shaft utilises LCP Combi Holes. This hybrid geometry integrates a threaded section for fixed-angle locking screws with dynamic compression cortical screws to achieve optimal load management.
+      </p>
       <ul>
-        <li> <strong>Biomechanical Compatibility: </strong> Features a much lower elastic modulus (~114 GPa) than stainless steel (~200 GPa). This closer match to human bone reduces the stiffness mismatch, helping to mitigate long-term stress shielding. </li>
-        <li> <strong>High Strength-to-Weight Ratio: </strong> Provides an exceptional yield strength (880 MPa) while keeping the plate thin and lightweight. This ensures the implant can easily survive the 29kg child forces without permanently deforming. </li>
-         <li> <strong>Superior Biocompatibility: </strong> Forms a passive oxide surface layer that delivers excellent corrosion resistance inside the body. This prevents the release of harmful metallic ions, lowering the risk of adverse tissue reactions. </li>
+        <li><strong>Mechanical Versatility:</strong> Allows the choice between rigid bridging fixation and axial compression depending on intraoperative needs.</li>
+        <li><strong>Biological Preservation:</strong> Locks the screws directly to the plate to avoid compression against the periosteal surface, preserving blood supply to accelerate bone healing.</li>
       </ul>
     </td> 
-    <td>
-      <img src="images/Titanium6AL-4V-Properties.png" width="280
+    <td style="text-align: center; vertical-align: middle;">
+      <img src="images/lcp-combi-hole.png" width="280" alt="Combi Holes CAD">
+    </td>
+  </tr>
+
+  <tr>
+    <td style="vertical-align: top;">
+      <h3>Scalloped Underside</h3>
+      <p class="clinical-context">
+        To further optimise the implant-bone interface, the underside of the plate shaft is scalloped. This reduces the contact area between the metal implant and the underlying skeleton to provide maximum vascular protection.
+      </p>
+      <ul>
+        <li><strong>Preserved Blood Flow:</strong> Minimises contact with the periosteum to protect the bone's outer blood supply. This prevents localized bone tissue death and helps speed up biological healing.</li>
+        <li><strong>Optimised Stress Distribution:</strong> Smooths out the stiffness transition and increases flexibility along the plate shaft. This reduces high stress concentrations around the screw holes during movement.</li>
+        <li><strong>Reduced Rigid Fixation:</strong> Lowers the plate's structural weight and stiffness. This lets the healing bone share some of the normal walking loads, which helps prevent long-term bone thinning from stress shielding.</li>
+      </ul>
+    </td> 
+    <td style="text-align: center; vertical-align: middle;">
+      <img src="images/scalloping.png" width="280" alt="Underside Scalloping CAD">
+    </td>
+  </tr>
+
+  <tr>
+    <td style="vertical-align: top;">
+      <h3>Material Selection: Titanium 6Al-4V</h3>
+      <p class="clinical-context">
+        To achieve the optimal balance between high loading strength and biological compatibility, the implant is manufactured from medical-grade Titanium 6Al-4V alloy. This material selection ensures advanced structural payload survival.
+      </p>
+      <ul>
+        <li><strong>Biomechanical Compliance:</strong> Features a much lower elastic modulus (~114 GPa) than stainless steel (~200 GPa). This closer match to human bone reduces the stiffness mismatch, helping to mitigate long-term stress shielding.</li>
+        <li><strong>High Strength-to-Weight Ratio:</strong> Provides an exceptional yield strength (880 MPa) while keeping the plate thin and lightweight. This ensures the implant can easily survive the 29kg child forces without permanently deforming.</li>
+        <li><strong>Superior Biocompatibility:</strong> Forms a passive oxide surface layer that delivers excellent corrosion resistance inside the body. This prevents the release of harmful metallic ions, lowering the risk of adverse tissue reactions.</li>
+      </ul>
+    </td> 
+    <td style="text-align: center; vertical-align: middle;">
+      <img src="images/Titanium6AL-4V-Properties.png" width="280" alt="FEA Stress Simulation Profile">
     </td>
   </tr>
 </table>
+
