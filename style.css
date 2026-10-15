@@ -45,12 +45,22 @@ td li {
   color:  #030057;
   margin-bottom: 6px;
 }
+
 td img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block; 
 }
+
+td.image-cell {
+  width: 250px;
+  height: 250px;
+  padding: 0;
+  vertical-align: middle;
+  overflow: hidden;         
+}
+
 .clinical-context {
   font-style: italic;
   color: #666666;
