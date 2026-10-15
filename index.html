@@ -10,7 +10,7 @@ The objective of this CAD project was to simulate a fracture plate explicitly en
 Designed for a 35 cm femur, this plate corresponds to the typical anatomy of an 8-to 9-year-old child [1]. A child in this age range typically weighs between 25 to 29 kilograms [2] [3]. The implant was designed for the walking forces of a 29 kg child, calculated by downscaling multi-axis adult gait telemetry data, with a safety factor of 2.0 [4].
 </p>
 
-<button type="button" class="collapsible"> <strong>Rationale Specification</strong> </button>
+<button type="button" class="collapsible"> <h2>Rationale Specification</h2> </button>
 <div class="content">
   <table>
     <tr>
@@ -104,12 +104,52 @@ for (i = 0; i < coll.length; i++) {
 }
 </script>
 
-<h2>FEA Results</h2>
+<button type="button" class="collapsible"> <h2>FEA Results</h2> </button>
 
-<h2>References</h2>
+<div>
+  
+</div>
 
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+</script>
+
+<button type="button" class="collapsible"> <h2>References</h2> </button>
+
+<div>
 <p> [1] Chen C, Milbrandt TA, Babadi E, Duong SQ, Larson DR, Shaughnessy WJ, et al. Normative Femoral and Tibial Lengths in a Modern Population of Twenty-First-Century U.S. Children. Journal of Bone and Joint Surgery [Internet]. 2023 Jan 19 [cited 2026 Oct 5];105(6):468–78. Available from: https://www.med.uvm.edu/docs/jc_peds_may_2023/orthopaedics-documents/jc_peds_may_2023.pdf?sfvrsn=be39953a_0 </p>
 <p> [2] UK Growth Chart for Girls (2–18 years) with Additional Guidance for Pubertal Assessment [Internet]. Harlow, UK: Royal College of Paediatrics and Child Health (RCPCH); 2012 [cited 2026 Oct 5]. Available from: https://www.rcpch.ac.uk/sites/default/files/Girls_2-18_years_growth_chart.pdf </P>
 <p> [3] UK Growth Chart for Boys (2–18 years) with Additional Guidance for Pubertal Assessment [Internet]. Harlow, UK: Royal College of Paediatrics and Child Health (RCPCH); 2012 [cited 2026 Oct 5]. Available from: https://www.rcpch.ac.uk/sites/default/files/Boys_2-18_years_growth_chart.pdf </p>
 <p> [4] Bergmann G, Bender A, Dymke J, Duda G, Damm P. Standardized Loads Acting in Hip Implants. Pérez MA, editor. PLOS ONE. 2016 May 19;11(5):e0155612. Available from: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0155612#pone-0155612-t005 </p>
 <p> [5] Marin E, Lanzutti A. Biomedical applications of titanium alloys: A comprehensive review. Materials [Internet]. 2024 Jan 1 [cited 2026 Oct 15];17(1):114. Available from: https://www.mdpi.com/1996-1944/17/1/114 </p>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+</script>
