@@ -1,33 +1,65 @@
-<style>
-  body {
-    background-color: #020035;
-    color: #e2e8f0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    line-height: 1.6;
-    padding: 20px;
-  }
-  
-  table {
-    border-collapse: collapse;
-    width: 80%;
-    border: 1.5px solid #21262d;
-    background-color: #020035;
-    margin-bottom: 15px;
-  }
+body {
+  background-color: #eeeeee;
+  color: #030057;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.6;
+  padding: 18px;
+}
 
-  th, td {
-    border: 1.5px solid #21262d;
-    padding: 12px;
-  }
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 3px solid #7adbe2;
+  margin-bottom: 15px;
+}
 
-  a {
-    color: #00f0ff;
-    text-decoration: none;
-    font-weight: bold;
-  }
+th, td {
+  border: 3px solid #666666;
+  padding: 14px;
+}
 
-  a:hover {
-    color: #ffffff;
-    text-decoration: underline;
-  }
-</style>
+th {
+  font-weight: 700;
+  color: #030057;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+
+td h3 {
+  font-style: bold;
+  margin-top: 0;
+  margin-bottom: 8px;
+  color: #030057;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+td ul {
+  margin-top: 4px;
+  margin-bottom: 0;
+  padding-left: 20px;
+}
+
+td li {
+  font-size: 16px;
+  color:  #030057;
+  margin-bottom: 6px;
+}
+.clinical-context {
+  font-style: italic;
+  color: #666666;
+  font-size: 14px;
+  margin-top: 4px;
+  margin-bottom: 14px;
+}
+
+a {
+    color: #7adbe2;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
