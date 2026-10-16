@@ -9,7 +9,7 @@
   </p>
   
   <p>
-  Designed for a 35 cm femur, this plate corresponds to the typical anatomy of an 8-to 9-year-old child [1]. A child in this age range typically weighs between 25 to 29 kilograms [2] [3]. The implant was designed for the walking forces of a 29 kg child, calculated by downscaling multi-axis adult gait telemetry data, with a safety factor of 2.0 [4].
+  Designed for a 35 cm femur, this plate corresponds to the typical anatomy of an 8-to 9-year-old child <a href="#references" class="remote-link">[1]</a>. A child in this age range typically weighs between 25 to 29 kilograms <a href="#references" class="scroll-and-open">[2] [3]</a>. The implant was designed for the walking forces of a 29 kg child, calculated by downscaling multi-axis adult gait telemetry data, with a safety factor of 2.0 <a href="#references" class="scroll-and-open">[4]</a>.
   </p>
   
   <button type="button" class="collapsible"> <h2>Rationale Specification</h2> </button>
@@ -87,7 +87,7 @@
         </td> 
         <td style="text-align: center; vertical-align: middle;">
           <img src="Images/Titanium6AL-4V-Properties.png" alt="Titanium 6AL 4V Stress-Strain Curve">
-           <p>Figure 4: Stress-strain curve of medical grade Titanium 6AL-4V. Source [5]</p>
+           <p>Figure 4: Stress-strain curve of medical grade Titanium 6AL-4V. Source <a href="#references" class="scroll-and-open">[5]</a></p>
         </td>
       </tr>
     </table>
@@ -100,7 +100,7 @@
   </strong>
   </div>
   
-  <button type="button" class="collapsible"> <h2>References</h2> </button>
+  <button type="button" id="references" class="collapsible"> <h2>References</h2> </button>
   <div class="content">
     <p> [1] Chen C, Milbrandt TA, Babadi E, Duong SQ, Larson DR, Shaughnessy WJ, et al. Normative Femoral and Tibial Lengths in a Modern Population of Twenty-First-Century U.S. Children. Journal of Bone and Joint Surgery [Internet]. 2023 Jan 19 [cited 2026 Oct 5];105(6):468–78. Available from: <a>https://www.med.uvm.edu/docs/jc_peds_may_2023/orthopaedics-documents/jc_peds_may_2023.pdf?sfvrsn=be39953a_0</a> </p>
     <p> [2] UK Growth Chart for Girls (2–18 years) with Additional Guidance for Pubertal Assessment [Internet]. Harlow, UK: Royal College of Paediatrics and Child Health (RCPCH); 2012 [cited 2026 Oct 5]. Available from: <a>https://www.rcpch.ac.uk/sites/default/files/Girls_2-18_years_growth_chart.pdf</a> </P>
@@ -112,6 +112,7 @@
 </body>
 
 <script>
+  
 var coll = document.getElementsByClassName("collapsible");
 var i;
 
@@ -126,4 +127,22 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+
+document.querySelectorAll('.remote-link').forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+    
+    const targetId = this.getAttribute('href').substring(1); 
+    const targetButton = document.getElementById(targetId);
+
+    if (targetButton) {
+      targetButton.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      
+      if (!targetButton.classList.contains('active')) {
+        targetButton.click();
+      }
+    }
+  });
+});
+
 </script>
