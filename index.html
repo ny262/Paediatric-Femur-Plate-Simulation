@@ -9,7 +9,7 @@
   </p>
   
   <p>
-  Designed for a 35 cm femur, this plate corresponds to the typical anatomy of an 8-to 9-year-old child <a href="#references" class="remote-link">[1]</a>. A child in this age range typically weighs between 25 to 29 kilograms <a href="#references" class="scroll-and-open">[2] [3]</a>. The implant was designed for the walking forces of a 29 kg child, calculated by downscaling multi-axis adult gait telemetry data, with a safety factor of 2.0 <a href="#references" class="scroll-and-open">[4]</a>.
+  Designed for a 35 cm femur, this plate corresponds to the typical anatomy of an 8-to 9-year-old child <a href="#references" class="remote-link">[1]</a>. A child in this age range typically weighs between 25 to 29 kilograms <a href="#references" class="scroll-and-open">[2]</a> <a href="#references" class="remote-link">[3]</a>. The implant was designed for the walking forces of a 29 kg child, calculated by downscaling multi-axis adult gait telemetry data, with a safety factor of 2.0 <a href="#references" class="scroll-and-open">[4]</a>.
   </p>
   
   <button type="button" class="collapsible"> <h2>Rationale Specification</h2> </button>
@@ -109,40 +109,6 @@
     <p> [5] Marin E, Lanzutti A. Biomedical applications of titanium alloys: A comprehensive review. Materials [Internet]. 2024 Jan 1 [cited 2026 Oct 15];17(1):114. Available from: <a>https://www.mdpi.com/1996-1944/17/1/114</a> </p>
   </div>
 
+  <script src="script.js"></script>
+
 </body>
-
-<script>
-  
-var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    }
-  });
-}
-
-document.querySelectorAll('.remote-link').forEach(link => {
-  link.addEventListener('click', function(e) {
-    e.preventDefault();
-    
-    const targetId = this.getAttribute('href').substring(1); 
-    const targetButton = document.getElementById(targetId);
-
-    if (targetButton) {
-      targetButton.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      
-      if (!targetButton.classList.contains('active')) {
-        targetButton.click();
-      }
-    }
-  });
-});
-
-</script>
