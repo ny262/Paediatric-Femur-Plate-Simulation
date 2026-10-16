@@ -94,8 +94,8 @@ td.image-cell {
 
 a {
     color: #0056b3;
-  text-decoration: underline;
-  font-weigh: normal;
+  text-decoration: none;
+  font-weigh: bold;
 }
 
 a:hover {
