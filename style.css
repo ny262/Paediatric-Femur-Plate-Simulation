@@ -81,12 +81,12 @@ td.image-cell {
 }
 
 .collapsible {
-  background-color: #cccccc;
-  color: #0056b3;
+  background-color: #0056b3;
+  color: #ffffff;
   cursor: pointer;
   padding: 15px;
   width: 100%;
-  border: #0056b3;
+  border: #cccccc;
   border: 3px solid #0056b3;
   text-align: left;
   outline: none;
