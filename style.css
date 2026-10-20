@@ -17,6 +17,7 @@ h2 {
 table {
   border-collapse: collapse;
   width: 100%;
+  margin-top: 15px;
   margin-bottom: 15px;
 }
 
@@ -66,6 +67,10 @@ td li {
   margin-bottom: 6px;
 }
 
+tr:nth-child(even) {
+  background-color: #e6f0fa;
+}
+
 .clinical-context {
   font-style: italic;
   color: #555555;
@@ -86,11 +91,15 @@ td li {
   cursor: pointer;
   padding: 15px;
   width: 100%;
-  border: #cccccc;
-  border: 3px solid #0056b3;
+  border-width: 3px;
+  border-style: solid; 
+  border-color: #0056b3;
+  overflow: hidden;
+  border-radius: 6px;
   text-align: left;
   outline: none;
-  margin-bottom:15px;
+  margin-top: 20px;
+  margin-bottom:20px;
 }
 
 .collapsible:hover {
@@ -101,6 +110,11 @@ a {
     color: #0056b3;
   text-decoration: none;
   font-weight: bold;
+}
+
+a:hover {
+  color: #666666;
+  text-decoration: underline;
 }
 
 a:hover {
