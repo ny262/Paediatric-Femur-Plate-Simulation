@@ -1,4 +1,12 @@
 ## Paediatric Femur Plate Simulation
+
+<table>
+  <tr>
+    <td><b>License</b></td>
+    <td><code>MIT</code></td>
+  </tr>
+</table>
+
 > [!WARNING]
 > Active development: Core simulations and parameters updating.
 
