@@ -48,4 +48,3 @@ document.querySelectorAll('.remote-link').forEach(link => {
         }
     });
 });
-
